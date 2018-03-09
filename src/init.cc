@@ -8,7 +8,6 @@
 #include "heapdiff.hh"
 #include "memwatch.hh"
 
-extern "C" {
     void init (v8::Handle<v8::Object> target)
     {
         Nan::HandleScope scope;
@@ -21,4 +20,3 @@ extern "C" {
     }
 
     NODE_MODULE(memwatch, init);
-};
